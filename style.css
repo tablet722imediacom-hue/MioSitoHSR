@@ -1,0 +1,278 @@
+
+/*CSS Standard*/
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.clr{
+    clear: both;
+}
+
+
+.roboto{
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cascadia {
+  font-family: "Cascadia Mono", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1, h2, h3{
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p{
+    font-family: "Cascadia Mono", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.grassetto{
+    font-weight: bold;
+}
+
+/* Reset Universale: azzera tutti gli spazi predefiniti del browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.collegamento-generico{
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #FFB600;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 50px 50px 50px 0px;
+}
+
+.collegamento-generico:hover{
+    background-color: black;
+    color: white;
+}
+
+
+/*Sezione della parte top del sito*/
+#container-top{
+    width: 100%;
+    height: 100px;
+    background-color: grey;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+}
+
+#menu-top{
+    padding: 0px;
+    position: absolute;
+    right: 0px;
+    top: 38px;
+}
+
+#menu-top li{
+    color: white;
+    font-size: 20px;
+    float: left;
+    margin: 0px 30px;
+    list-style-type: none;
+    margin-right: 50px;
+}
+
+#menu-top li:hover{
+    color: orange;
+    cursor: pointer;
+}
+
+#menu-top li.menu-active{
+    color: orange;
+}
+
+#menu-top li a{
+    color: inherit;
+    text-decoration: none;
+}
+
+#logo{
+    width: 150px;
+    height: 100px;
+    background-color: white;
+}
+
+#logo img{
+    width: 150px;
+    height: 100px;
+}
+
+#slider{
+    width: 100%;
+    height: 1000px;
+    background-image: url(img/operation.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#slider h1{
+    text-align: center;
+    font-size: 50px;
+    line-height: 80px;
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    margin-bottom: 20px;
+}
+
+#slider p{
+    font-size: 30px;
+    line-height: 80px;
+    color: white;
+}
+
+#slider-interno{
+    z-index: 2;
+}
+
+#separatore{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+79,0.65+99,0+100 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 79%,rgba(0,0,0,0.65) 99%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+/*Sezione 1-2*/
+#home-section1, #home-section2{
+    width: 100%;
+    height: auto;
+    background-color: #f1f1f1;
+}
+
+#home-section1 img, #home-section2 img{
+    width: 200px;
+    height: 200px;
+}
+
+#section1-interna, #section2-interna{
+    width: 500px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    z-index: 2;
+}
+.sfondo-sfocato {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/sfondo.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(8px); 
+    z-index: 1; 
+}
+
+#section1-interna h2{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 40px;
+    color: #FFF4D1;
+}
+
+#section1-interna p{
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+}
+
+/*Sezione 2*/
+#section2-left{
+    width: 50%;
+    position: relative;
+    float: left;
+    height: 500px;
+    background-color: #8A7C7B;
+}
+
+#section2-left h2{
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+#section2-left p{
+    font-size: 18px;
+}
+
+#section2-right{
+    width: 50%;
+    position: relative;
+    float: left;
+    height: 500px;
+    background-image: url(img/herta.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/*Footer*/
+#footer{
+    padding-top: 20px;
+    width: 100%;
+    height: 150px;
+    background-color: #BDBDBD;
+}
+
+.footer{
+    width: 33.3%;
+    height: auto;
+}
+
+.footer-left, .footer-center, .footer-right{
+    float: left;
+}
+
+.footer-interna{
+    padding: 50px 0px;
+}
+
+#footer a{
+    color: inherit;
+    text-decoration: none;
+}
+
+#footer .social-icon{
+    width: 70px;
+    height: auto;
+    margin: 5px 10px;
+}
+
+#footer h3{
+    font-size: 25px;
+}
+
+#footer h3{
+    font-size: 35px;
+}
+
+#footer a{
+    font-size: 20px;
+}
