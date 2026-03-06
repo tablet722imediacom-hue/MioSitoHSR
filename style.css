@@ -68,27 +68,32 @@ p{
 
 
 /*Sezione della parte top del sito*/
-#container-top{
+#container-top {
     width: 100%;
     height: 100px;
-    background-color: grey;
-    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6); /* Corretto rgba */
+    backdrop-filter: blur(10px);
+    position: fixed;
     top: 0px;
     left: 0px;
     z-index: 5;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0 50px;
 }
 
-#menu-top{
+#menu-top {
     padding: 0px;
-    position: absolute;
-    right: 0px;
-    top: 38px;
+    margin: 0px;
+    display: flex; 
+    align-items: center;
 }
 
 #menu-top li{
     color: white;
     font-size: 25px;
-    float: left;
     margin: 0px 30px;
     list-style-type: none;
     margin-right: 50px;
