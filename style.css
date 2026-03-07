@@ -79,7 +79,8 @@ p{
     transition: all 0.3s ease;
     user-select: none;
     -webkit-user-drag: none;
-    -moz-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
 }
 
 .collegamento-generico:hover{
@@ -112,11 +113,22 @@ p{
     padding: 0 50px;
 }
 
+#container-top img{
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
 #menu-top {
     padding: 0px;
     margin: 0px;
     display: flex; 
     align-items: center;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
 }
 
 #menu-top li{
@@ -200,6 +212,10 @@ p{
 #home-section1 img, #home-section2 img{
     width: 200px;
     height: 200px;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
 }
 
 #section1-interna, #section2-interna{
