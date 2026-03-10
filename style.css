@@ -347,6 +347,7 @@ p{
     padding-top: 120px; 
 }
 
+/*!!! Css del contenitore !!!*/
 .operation-container {
     max-width: 1000px;
     margin: 0 auto;
@@ -418,7 +419,9 @@ p{
     border: 1px solid rgba(255, 255, 255, 0.6); 
     z-index: 2;
 }
+/*!!! Css del contenitore !!!*/
 
+/*!!! Css dei testi !!!*/
 .operation-right h2 {
     font-size: 35px;
     margin-bottom: 15px;
@@ -465,6 +468,7 @@ p{
     filter: blur(8px); 
     z-index: -1; 
 }
+/*!!! Css dei testi !!!*/
 
 
 /*Codice Condotta*/
