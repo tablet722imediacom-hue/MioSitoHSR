@@ -468,53 +468,123 @@ p{
     filter: blur(8px); 
     z-index: -1; 
 }
-/*!!! Css dei testi !!!*/
 
 
 /*Codice Condotta*/
-#codicecondotta{
+#codicecondotta {
     width: 100%;
     height: auto;
     padding: 80px 20px;
-    background-color: #111;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2; /*Assicura che stia sopra lo sfondo sfocato*/
 }
 
-.codice-interno{
-    max-width: 900px;
-    background-color: #1a1a1a; 
+/* Stile Vetro Oscurato (Come le schede operatori) per i box principali */
+.codice-interno, .statistiche-dipartimento {
+    flex: 1; 
+    min-width: 300px; 
+    max-width: 500px; 
+    
+    background: rgba(20, 10, 40, 0.7); 
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 215, 0, 0.3); 
+    border-radius: 20px; 
     padding: 40px 50px;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8); 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5); 
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.codice-interno h2{
-    color: #FFB600;
+.codice-interno:hover, .statistiche-dipartimento:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+    border-color: #FFD700;
+}
+
+.codice-interno h2, .statistiche-dipartimento h2 {
+    color: #FFD700; /* Stesso oro */
     margin-bottom: 30px;
     text-align: center;
-    font-size: 32px;
+    font-size: 30px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-.codice-interno ul{
+/* --- LISTA CODICE DI CONDOTTA --- */
+.codice-interno ul {
     list-style-type: none;
     padding: 0;
 }
 
-.codice-interno li{
-    color: white;
-    font-size: 18px;
-    margin-bottom: 20px;
-    line-height: 1.6;
-    padding-left: 30px;
-    position: relative;
-    font-family: "Cascadia Mono", sans-serif; /* Usa il font "tecnico" che hai importato */
+.codice-interno a{
+    text-decoration: none;
+    color: inherit;
+    
 }
 
-.codice-interno li::before{
+.codice-interno li {
+    font-family: "Cascadia Mono", monospace;
+    color: #fff;
+    font-size: 17px; 
+    margin-bottom: 20px;
+    line-height: 1.6;
+    padding: 10px 15px 10px 40px;
+    position: relative;
+    
+    background: rgba(0, 0, 0, 0.4); 
+    border-radius: 8px;
+    border-left: 3px solid #FFB600; 
+}
+
+.codice-interno li::before {
     content: "⚠️";
     position: absolute;
-    left: 0;
+    left: 10px;
+    top: 10px;
+}
+
+.codice-interno strong {
+    color: #FFB600;
+    display: block; /*Mette "articolo" sopra la regola*/
+    font-size: 19px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    letter-spacing: 0.5px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/*Statistiche*/
+.stat-box {
+    /* Stile "info-item" degli operatori */
+    background: rgba(0, 0, 0, 0.4); 
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center; 
+    border-left: 3px solid #FFB600;
+}
+
+.stat-box h3 {
+    color: #FFB600;
+    font-size: 19px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-weight: bold;
+}
+
+.stat-box p {
+    color: #fff;
+    font-size: 26px;
+    font-family: "Cascadia Mono", sans-serif;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
