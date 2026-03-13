@@ -361,7 +361,7 @@ p{
     display: flex;
     background: rgba(20, 10, 40, 0.7);
     backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 215, 0, 0.3);
+    border: 1px solid #EA89FA;
     border-radius: 20px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -370,12 +370,12 @@ p{
 .operator-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-    border-color: #FFD700;
+    border-color: #EA89FA;
 }
 
 .operator-card:hover .operation-left img {
-    border-color: #FFD700;
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6); /* Bagliore dorato */
+    border-color: #EA89FA;
+    box-shadow: 0 0 20px #EA89FA; /* Bagliore dorato */
     transform: scale(1.05); /* Leggero zoom in avanti */
 }
 
@@ -392,7 +392,7 @@ p{
     height: 180px;
     object-fit: cover;
     border-radius: 50%; 
-    border: 3px solid rgba(255, 215, 0, 0.5); /* Bordo di base semi-trasparente */
+    border: 3px solid #EA89FA; /* Bordo di base semi-trasparente */
     transition: all 0.4s ease; /* Prepara l'animazione */
 }
 
@@ -403,7 +403,7 @@ p{
 }
 
 .role-badge {
-    background: linear-gradient(135deg, #FFD700 0%, #FF8C00 100%);
+    background: linear-gradient(135deg, #EA89FA 0%, #E663F7 100%);
     color: #1a1a1a;
     padding: 6px 18px;
     border-radius: 30px;
@@ -425,8 +425,9 @@ p{
 .operation-right h2 {
     font-size: 35px;
     margin-bottom: 15px;
-    color: black; 
+    color: white; 
     font-weight: bold;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .info-grid {
@@ -443,15 +444,15 @@ p{
     background: rgba(0, 0, 0, 0.4); 
     padding: 10px 15px;
     border-radius: 8px;
-    border-left: 3px solid #FFB600; 
+    border-left: 3px solid #E663F7; 
 }
 
 .info-item strong {
-    color: #FFB600;
+    color: #E663F7;
     display: block; 
-    font-size: 14px; /* Ridotto un po' per non sovrastare il dato */
+    font-size: 14px; 
     text-transform: uppercase;
-    margin-bottom: 5px; /* Aggiunge spazio sotto l'etichetta */
+    margin-bottom: 5px; 
     letter-spacing: 0.5px;
 }
 
